@@ -1,180 +1,156 @@
+!DOCTYPE html>
 <html lang="en">
-    <head>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Cloud Resume</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-    <div class="headshot-container">
-        <img src="https://www.dropbox.com/scl/fi/myga86vptx3bzc67w578m/IMG_5288.JPEG?rlkey=nw41uygi9yui83x386kdhdzap&st=w4t75nvr&dl=0" style="90%"  alt="Francisca" class="resume-headshot" />
-    </div>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">FRANCISCA' MUTUNGAMA</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        FRANCISCA' MUTUNGAMA
-                        <span class="text-primary"></span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        London,UK ·
-                        <a href="mailto:name@email.com">FMUTUNGAMA@ICLOUD.COM</a>
-                    </div>
-                    <p class="lead mb-5">I am a budding Cloud Engineer who is passionate about utilising technology to solve real-world problems. Skilled in Python, Amazon AWS, and Cloud Computing, with expertise in communication and presentation.Currently an Amazon AWS Cloud Engineering intern,to enhance technical proficiency and seamlessly integrate client success strategies into cloud solutions architecture. Leveraging years of experience in driving customer satisfaction and retention as a Customer Success Engineer at Tese, I am proficient at understanding client needs and translating them into innovative cloud solutions.Seeking an opportunity where I can employ my skillset and actively learn new technologies. </p>
-                    <div>
-    <a class="social-icon" href="https://www.linkedin.com/in/francisca-mutungama5/" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-linkedin"></i>
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+          <div class ="mypicture">
+        <img src="https://previews.dropbox.com/p/thumb/ACRN4H6zwEWo6E_C-O_7a6nk8rNPDupB5_4OVOqIv2KUheYt7M7Ee5_lbjA7grrdebCQPhroCLZ-uphq7p02T7arwkjz3i6mZYMIAOy1mt5Zw5qEkZUc-njdqGDjuoW09mTJIih9nXqnr25YObC-VHUEGkiSNik0cC0l4raMW7_jaBNS1F2Rx-ojvmuqm2Yae_rUUksYAC7CAc3WvuIiOM3ELpd7cELbvk7EtMVcCHAiW9f_G36mp5f4EVJq8tECBv1xLo5FIM7oWhE_C2Ig8C4tbhYMDnZs5TT9eGb2ScMJOC73PGabzyxJnfBqu_Y0f2VzwMsR9k66VKfjVxWbGrGvJ3BtPwsqFM716vvLtsGquA/p.jpeg" />
+        <!--SOCIAL NETWORK BUTTONS-->
+          </div>
+        <div class="links w3-margin-top w3-padding-small">
+    <a href="https://github.com/FranciscaTMutungama" target="_blank">
+        <i data-feather="github"></i>
     </a>
-    <a class="social-icon" href="https://github.com/FranciscaTMutungama" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i>
+    <a href="https://www.linkedin.com/in/francisca-mutungama5/" target="_blank">
+        <i data-feather="linkedin"></i>
     </a>
 </div>
 
-            </section>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
 
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Cloud ENGINEER/SECURITY(AWS re/Start)</h3>
-                            <div class="subheading mb-3">IN4GROUP</div>
-                            <p><ul>
- <li>Understanding types and characteristics of the various AWS services.</li>
-  <li>Explaining common practices when using Linux commands and Python.</li>
-  <li>Introduction to Networking, exploring communication protocols, IP Subnetting and OSI.</li>
-  <li>Summarising the importance of Cloud Security and defence against cyber attacks.</li>
-  <li>Applying quality control to AWS architecture and cost control.</li>
-<li>Participate in hands-on labs, projects, and simulations to gain practical experience
-in designing, implementing, and securing cloud-based solutions using AWS
-                            technologies.</li>
-</ul></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2024 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Customer Success Engineer</h3>
-                            <div class="subheading mb-3">Tese</div>
-                            <p><ul>
-  <li>Develop and implement client onboarding processes resulting in a 20% increase in
-client satisfaction</li>
-  <li>Successfully manage a portfolio of 50+ clients, consistently meeting or exceeding
-client retention targets</li>
-  <li>Collaborate with cross-functional teams to launch new product features, resulting
-in a 10% increase in upsells</li>
-  <li>Provided technical support and guidance to clients, addressing inquiries,
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <h1>FRANCISCA MUTUNGAMA</h2>
+            <h2>CLOUD ENGINEER</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2">
+              I am a Cloud Engineer who is passionate about utilising technology to solve real-world problems.
+              Skilled in Python, AWS Services, and Cloud Computing, with expertise in communication and presentation.
+              Leveraging years of experience in driving customer satisfaction and retention as a Customer Success Engineer at Tese, I am proficient at understanding client needs and translating them into innovative cloud solutions.
+              Seeking an opportunity where I can employ my skillset and actively learn new technologies.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">WORK EXPERIENCE</h3>
+              <div class="">
+                <h4>Cloud Engineer (AWS re/Start)-IN4GROUP-</h4>
+                <p>February 2024 - Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Gained hands-on experience with AWS Services including EC2, S3, VPC, RDS and IAM</li>
+                  <li>Designed and deployed scalable, highly available, and fault-tolerant system on AWS</li>
+                  <li>Conducted security assessments and audits to identify and mitigate potential vulnerabilities</li>
+                  <li>Developed scripts using Python and Bash for automation of routine tasks</li>
+                  <li>Configured and managed virtual private clouds(VPC), subnets, route tables and network gateways</li>
+                  <li>Analyze logs and performance metrics to optimize system performance and reliability</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Customer Success Engineer-TESE</h4>
+                <p>October 2020 - February 2024 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Develop and implement client onboarding processes resulting in a 20% increase in
+client satisfaction.</li>
+                  <li>Successfully manage a portfolio of 50+ clients, consistently meeting or exceeding
+client retention targets.</li>
+                  <li>Collaborate with cross-functional teams to launch new product features, resulting
+in a 10% increase in upsells.</li>
+                  <li>Provided technical support and guidance to clients, addressing inquiries,
 troubleshooting issues, and ensuring timely resolution of technical challenges</li>
-  <li>Conduct regular client meetings and business reviews to ensure client success and
-identify upsell opportunities</li>
-</ul></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2020 - February 2024 </span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">MEMBERSHIP ADMINISTRATOR</h3>
-                            <div class="subheading mb-3">national pharmacy association</div>
-                            <p><ul>
-  <li>Managed membership databases, including data entry, validation, and maintenance. Experienced in performing database queries, generating reports, and ensuring data accuracy and integrity</li>
-  <li>Skilled in providing technical support to members, assisting with login issues, account setup, and access permissions. Ability to troubleshoot technical issues related to membership platforms and provide timely resolutions</li>
-  <li>Processed new member registrations, renewals, and membership cancellations, utilizing the organization's membership platform and CRM system.</li>
-  <li>Identified issues within the sales process and implemented solutions</li>
-  <li>Created targeted email campaigns and reached out to businesses to create new sales opportunities</li>
-</ul></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2022 – October 2023</span></div>
-                    </div>
+                  <li>Conduct regular client meetings and business reviews to ensure client success and
+identify upsell opportunities.</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Membership Administrator-NATIONAL PHARMACY ASSOCIATION</h4>
+                <p>October 2022 - October 2023 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Managed membership databases, including data entry, validation, and maintenance. Experienced in performing database queries, generating reports, and ensuring data accuracy and integrity.</li>
+                  <li> Skilled in providing technical support to members, assisting with login issues, account setup, and access permissions. Ability to troubleshoot technical issues related to membership platforms and provide timely resolutions.
+</li>
+                  <li> Processed new member registrations, renewals, and membership cancellations, utilizing the organization's membership platform and CRM system.</li>
+                </ul>
+              </div>
+            </div>
 
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">skills city</h3>
-                          <li>Enrolled in an intensive program focused on AWS cloud engineering and security,
-covering topics such as AWS services, security controls, compliance frameworks,
-                            cloud monitoring, maintenance and incident response.</li>
-                          <li>Participate in hands-on labs, projects, and simulations to gain practical experience
-in designing, implementing, and securing cloud-based solutions using AWS
-technologies.</li>
-                          <li>Engage in collaborative discussions, workshops, and industry events to stay
-updated on the latest trends, developments, and best practices in cloud computing
-and cybersecurity.</li>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2024 -May 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">OAKLANDS College </h3>
-                            <div class="subheading mb-3">Higher National Diploma(LAW)</div>
-                          <li>Completed a comprehensive Social Sciences Diploma focusing on law, criminology,
-psychology, and sociology. Developed a strong foundation in understanding human
-behaviour, societal structures, and legal frameworks. Leveraged interdisciplinary
-knowledge to enhance critical thinking, research, and analytical skills, which are
-invaluable in cloud engineering.</li>
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">EDUCATION</h3>
+                <h4>Cloud Engineer(AWS re/Start) Skills City</h4>
+                <p>February 2024 - May 2024 </p>
+                <h4>Higher National Diploma,Law, Oaklands College</h4>
+                <p>September 2021- July 2022 </p>
+            </div>
 
-
-
-                     </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2021 - June 2022 </span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Tools & Languages</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-
-
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-
-                    </ul>
-            <hr class="m-0" />
-
-
-            <hr class="m-0" />
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li> Amazon AWS Services</li>
+                <li>Linux </li>
+                <li>Python</li>
+                <li>Terraform</li>
+                <li>Adaptability</li>
+                <li>Problem-Solving</li>
+                <li>Cloud Security</li>
+              </ul>
+              <!--CERTIIFICATIONS-->
+             <hr class="m-0" />
             <!-- Certifications-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
@@ -190,11 +166,34 @@ invaluable in cloud engineering.</li>
                 </div>
             </section>
         <div id="footer">
-                <b>Visitors: <span id='replaceme'>loading...</span></b>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+          <!--CONTACT -->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Email: fmutungama@icloud.com</p>
+              <p></p>
+            </div>
+          </div>
+
+        <!--END OF CV SECTION-->
+      </section>
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else {
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
 </html>
